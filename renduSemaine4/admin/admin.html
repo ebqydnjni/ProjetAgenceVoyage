@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../dashboardCards.css" />
+
+    <link rel="icon" href="../images/Icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header" id="navbar">
+      <img
+        class="logo"
+        width="100px"
+        height="66"
+        src="../images/logo.png"
+        alt="logo"
+      />
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="#Recherche">Rechercher</a></li>
+          <li><a href="../accueil.php">A Propos</a></li>
+          <li><a href="../accueil.php">Contact</a></li>
+          <li style="color: orange; font-size: 20px; margin-left: 100px">
+            lamino>
+          </li>
+          <li class="logout">
+            <a class="material-symbols-outlined" href="../accueil.php"
+              >logout</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <a href="#" class="active" title="Billets"
+        ><span class="material-symbols-outlined"> airplane_ticket </span></a
+      >
+      <a href="#" class="active" title="Reservations"
+        ><span class="material-symbols-outlined"> auto_stories </span></a
+      >
+      <a href="#" class="active" title="Utilisateurs"
+        ><span class="material-symbols-outlined"> group </span></a
+      >
+      <a href="#" class="active" title="Profil"
+        ><span class="material-symbols-outlined"> person </span></a
+      >
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Carte 1 -->
+      <div class="dashboard-format-container">
+        <div class="dashboard_box">
+          <div class="dashboard_item">
+            <a href="#" class="dashboard-item_link">
+              <div class="dashboard-item_bg"></div>
+              <div class="dashboard-item_title">
+                <span class="material-symbols-outlined">airplane_ticket</span
+                ><br />
+                BILLETS
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--  Carte 2  -->
+      <div class="dashboard-format-container">
+        <div class="dashboard_box">
+          <div class="dashboard_item">
+            <a href="#" class="dashboard-item_link">
+              <div
+                class="dashboard-item_bg"
+                style="background-color: #f7aa25"
+              ></div>
+              <div class="dashboard-item_title">
+                <span class="material-symbols-outlined">auto_stories</span
+                ><br />
+                RESERVATIONS
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--  Carte 3 -->
+      <div class="dashboard-format-container">
+        <div class="dashboard_box">
+          <div class="dashboard_item">
+            <a href="#" class="dashboard-item_link">
+              <div
+                class="dashboard-item_bg"
+                style="background-color: #f3a31a"
+              ></div>
+              <div class="dashboard-item_title">
+                <span class="material-symbols-outlined">person</span><br />
+                PROFIL
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--  Carte 4 -->
+      <div class="dashboard-format-container">
+        <div class="dashboard_box">
+          <div class="dashboard_item">
+            <a href="#" class="dashboard-item_link">
+              <div
+                class="dashboard-item_bg"
+                style="background-color: #f39f0e"
+              ></div>
+              <div class="dashboard-item_title">
+                <span class="material-symbols-outlined">group</span><br />
+                UTILISATEURS
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      function logout() {
+        window.location.href = "accueil.html";
+      }
+    </script>
+  </body>
+</html>

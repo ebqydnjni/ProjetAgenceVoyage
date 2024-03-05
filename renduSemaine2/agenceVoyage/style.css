@@ -1,0 +1,619 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", "Helvetica Neue", Helvetica;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 40px;
+  border: 80px;
+}
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 0;
+  margin-bottom: 1px;
+}
+h3 {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mainTitle {
+  margin-top: 300px;
+  margin-bottom: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+ul {
+  list-style: none;
+}
+li,
+a,
+button {
+  color: #fff;
+  text-align: center;
+  font-family: "montserrat", "Helvetica Neue", Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  line-height: normal;
+  border-width: 0px;
+}
+input {
+  border-radius: 12px;
+  padding: 10px;
+  border-width: 0px;
+  background-color: #fa8a024d;
+}
+
+.fontResultat {
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 2px;
+  color: #fa8b02;
+}
+.search {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -1px;
+
+  border-radius: 0px 12px 12px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 139, 2, 0.3) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+.searchBlock {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: -1px;
+
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-left: 268px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+
+  /*Fade in*/
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+.searchButton {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--Orange, #fa8b02);
+  transition: all 0.3s ease 0s;
+  padding: 10px;
+}
+.voyageBlock1 {
+  margin-bottom: 0px;
+
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px 12px 0px 0px;
+  background: var(--white, #fff);
+  justify-content: space-between;
+  display: inline-flex;
+  margin-right: 16px;
+}
+
+.searchForm {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px 12px 12px 12px;
+  background: var(--white, #fff);
+}
+header {
+  display: flex;
+  padding: 20px 250px;
+  margin-left: 100px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(75, 71, 71, 0.604);
+  position: fixed;
+  border-radius: 12px;
+  z-index: 3;
+  color: white;
+  /**/
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+.ax {
+  color: #fa8b02;
+}
+.logo {
+  margin-left: 250;
+  cursor: pointer;
+}
+.connection {
+  margin-left: 100px;
+  color: #fa8b02;
+}
+.navigation,
+.connection {
+  list-style: none;
+}
+.navigation a:active {
+  text-decoration: underline;
+  text-decoration-color: #fa8b02;
+}
+.navigation li,
+.connection li,
+.inscription li {
+  display: inline-block;
+  padding: 10px 12px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.navigation li a,
+.connection li a,
+.inscription li a {
+  transition: all 0.3s ease;
+}
+
+.connection li a:hover,
+.navigation li a:hover {
+  color: #fa8b02;
+}
+.inscription button {
+  display: flex;
+  padding: 7px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 50px;
+  background: rgba(250, 139, 2, 1);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:active {
+  transform: scale(0.95);
+}
+.active {
+  text-decoration: underline;
+}
+nav ul li a.underline {
+  text-decoration: underline;
+}
+.Apropos {
+  position: relative;
+}
+.Apropos_content_1 {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  margin-left: 268px;
+  margin-right: 200px;
+  border-radius: 12px 12px 0px 0px;
+  justify-content: center;
+  height: 500px;
+}
+
+.Apropos_Image_1 {
+  margin-right: 50px;
+  max-width: 100%;
+  margin-left: 50px;
+}
+.Apropos_content_2 {
+  display: flex;
+  padding-bottom: 100px;
+  background: linear-gradient(180deg, #ffcfa0 0%, #ffbc8a 100%);
+  margin: 0px;
+  border-radius: 0px 0px 12px 12px;
+  margin-left: 268px;
+  margin-right: 200px;
+  height: 250px;
+}
+.Apropos_image_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Adjust z-index to ensure the image is above the content */
+  z-index: 1;
+  /* You can adjust width and height of the image */
+  width: 300px;
+  height: 300px;
+  margin-left: 800px;
+  margin-top: 350px;
+}
+.Apropos_text {
+  margin-bottom: 120px;
+  margin-left: 150px;
+  margin-right: 100px;
+
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  color: var(--black, #333);
+  font-weight: 400;
+  text-align: justify;
+  z-index: 2;
+}
+.Apropos_title {
+  margin-bottom: 100px;
+  margin-bottom: 30px;
+  color: var(--black, #333);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-right: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.percentage {
+  font-size: 60px;
+  color: #fa8b02;
+}
+.contact {
+  display: inline-flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.3);
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 500px;
+  margin-top: 30px;
+  height: 210px;
+}
+.contact_title {
+  color: var(--black, #333);
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.contact_text {
+  color: var(--black, #333);
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.contact button {
+  display: flex;
+  padding: 7px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 50px;
+  background: rgba(250, 139, 2, 1);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .searchBlock {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Apropos_content_1,
+  .Apropos_content_2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Apropos_text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contact {
+    margin-right: 20px;
+  }
+}
+/*SIGN UP */
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+
+  /*Fade in */
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+.popup-content {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.72) 16.21%,
+    rgba(250, 139, 2, 0.72) 108.26%
+  );
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  border-radius: 24px;
+}
+.signup_button {
+  display: flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 50px;
+  background: #fa8b02;
+  margin-left: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.sign_up_form {
+  margin-bottom: 20px;
+}
+.sign_up_form input {
+  display: block; /* Display the input as a block element */
+  width: 30%; /* Make the input fill the width of its container */
+  padding: 5px; /* Add some padding for better appearance */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: white;
+
+  border-radius: 8px;
+  margin-left: 250px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.sign_up_form label {
+  display: block; /* Display the label as a block element */
+  font-weight: 100;
+  margin-top: 10px;
+}
+.sign_up_span {
+  color: #fa8b02;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  margin-right: 10px;
+  color: white;
+}
+/*SIGN IN */
+
+.popup2 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+
+  /*Fade in */
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+.popup2-content {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.72) 16.21%,
+    rgba(250, 139, 2, 0.72) 108.26%
+  );
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  border-radius: 24px;
+}
+.signin_button {
+  display: flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 50px;
+  background: #fa8b02;
+  margin-left: 300px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.sign_in_form {
+  margin-bottom: 20px;
+}
+.sign_in_form input {
+  display: block; /* Display the input as a block element */
+  width: 30%; /* Make the input fill the width of its container */
+  padding: 5px; /* Add some padding for better appearance */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: white;
+
+  border-radius: 8px;
+  margin-left: 250px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.sign_in_form label {
+  display: block; /* Display the label as a block element */
+  font-weight: 100;
+  margin-top: 10px;
+}
+.sign_in_span {
+  color: #fa8b02;
+  cursor: pointer;
+}
+.close2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  margin-right: 10px;
+  color: white;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media query to adjust popup size for smaller screens */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 80%;
+  }
+}
+
+/* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1025px) {
+  body {
+    padding: 40px;
+  }
+
+  header {
+    padding: 20px 250px;
+    margin-left: 100px;
+    margin-right: 10px;
+  }
+
+  .searchBlock {
+    margin-left: 268px;
+    margin-right: 200px;
+  }
+
+  .Apropos_content_1,
+  .Apropos_content_2 {
+    margin-left: 268px;
+    margin-right: 200px;
+  }
+
+  .Apropos_text {
+    margin-left: 150px;
+    margin-right: 100px;
+  }
+
+  .contact {
+    margin-right: 500px;
+  }
+}
